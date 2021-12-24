@@ -9,7 +9,7 @@ const port = 3000
 
 app.use(express.static(path.join(__dirname, 'public')))
 //morgan
-app.use(morgan('combined'))
+// app.use(morgan('combined'))
 
 //handlebar
 app.engine('handlebars', handlebars())
@@ -22,6 +22,10 @@ app.get('/', (req, res) => {
 })
 app.get('/news', (req, res) => {
   res.render('new')
+})
+app.get('/search', (req, res) => {
+  // console.log(req.query.q)
+  res.render('search')
 })
 
 app.listen(port, () => {
