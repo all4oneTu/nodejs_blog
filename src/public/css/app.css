@@ -11,3 +11,13 @@ h4 {
   position: absolute;
   bottom: 0;
   left: 0; }
+
+.card-course-item {
+  margin-top: 16px; }
+
+.card-img-top {
+  width: 100px;
+  height: 100%; }
+
+.card-list {
+  max-width: 200px; }
