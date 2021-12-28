@@ -4,9 +4,13 @@
         {{#each course}}
         <div class="col-sm-6 col-lg-4 card-list">
             <div class="card card-course-item">
-                <img class="card-img-top" src="{{this.img}}" alt="Card image cap">
+                <a href="/courses/{{this.slug}}">
+                    <img class="card-img-top" src="{{this.img}}" alt="Card image cap">  
+                </a>
                 <div class="card-body">
-                    <h5 class="card-title">{{this.test}}</h5>
+                    <a href="/courses/{{this.slug}}">
+                        <h5 class="card-title">{{this.test}}</h5>                  
+                    </a>
                     <p class="card-text">{{this.name}}</p>
                     <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>

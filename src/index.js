@@ -3,6 +3,7 @@ const morgan = require('morgan')
 const path = require('path')
 const handlebars = require('express-handlebars')
 const db = require('./config/db')
+
 //express
 const app = express()
 const port = 3000
@@ -30,7 +31,8 @@ app.set('views', path.join(__dirname, 'resource/views'))
 // app.use(express.json)
 //main code
 
-
+app.use(express.json());
+app.use(express.urlencoded());
 route(app)
 
 app.listen(port, () => {
